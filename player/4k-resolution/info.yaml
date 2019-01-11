@@ -1,0 +1,15 @@
+title: 4k Resolution
+description: Test description
+long_description: Test long description.
+
+executable:
+  executable: true
+  indexfile: index.html
+
+tags:
+  - TestTag
+
+additionalCategories:
+  - encoding
+
+priority: 920
