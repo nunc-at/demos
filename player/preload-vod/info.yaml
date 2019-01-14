@@ -6,6 +6,12 @@ executable:
   executable: true
   indexfile: index.html
 
+code:
+  show_code: true
+  language: js
+  files:
+    - setup.js
+
 tags:
   - TestTag
 
