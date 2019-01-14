@@ -1,10 +1,16 @@
-title: Overlay Ads
-description: Test description
+title: Overlay Ad
+description: Enable static ads in and around the video player
 long_description: Test long description.
 
 executable:
   executable: true
   indexfile: index.html
+
+code:
+  show_code: true
+  language: js
+  files:
+    - setup.js
 
 tags:
   - TestTag

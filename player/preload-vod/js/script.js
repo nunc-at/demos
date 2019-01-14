@@ -43,13 +43,20 @@ var playerContainer = document.getElementById('player-container');
 var player = new bitmovin.player.Player(playerContainer, conf);
 
 function loadPlayer() {
-  playerPreload.load(source).then(() => {
+  playerPreload.load(source).then(function() {
     document.getElementById('startup').innerHTML = Date.now() - pageLoadedTime + 'ms';
+    var bufferRate = document.getElementById('buffer');
+    setInterval(function() {
+      if (playerPreload && !playerPreload.isPaused()) {
+        bufferRate.innerHTML = Math.round(playerPreload.getVideoBufferLength() * 100) / 100 + 's';
+      }
+    }, 50);
   });
+
   player.load(source);
 }
 
-$(document).ready(() => {
+$(document).ready(function() {
   pageLoadedTime = Date.now();
   loadPlayer();
-})
+});

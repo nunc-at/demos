@@ -1,6 +1,14 @@
 var conf = {
-    key: '<YOUR PLAYER KEY>'
-  };
+  key: '<YOUR PLAYER KEY>',
+  advertising: {
+    adBreaks: [{
+      tag: {
+        url: adUrl,
+        type: adType
+      }
+    }]
+  }
+};
   
 var source = {
   dash: 'https://bitmovin-a.akamaihd.net/content/sintel/sintel.mpd',
