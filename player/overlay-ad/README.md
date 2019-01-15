@@ -1,6 +1,6 @@
 # Overlay Ad
 
-Enable static ads in and around the video player.
+Enable static ads in the video player.
 
 ### Tags
 

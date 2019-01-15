@@ -1,6 +1,6 @@
 # Preload VoD
 
-Test readme description.
+Enable users to instantly start watching their content without buffering or waiting.
 
 ### Tags
 

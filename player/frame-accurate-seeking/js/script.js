@@ -291,9 +291,7 @@ var assets = [
   {
     name: '24 FPS',
     source: {
-      dash: 'https://bitmovin-a.akamaihd.net/content/sintel/sintel.mpd',
-      hls: 'https://bitmovin-a.akamaihd.net/content/sintel/hls/playlist.m3u8',
-      poster: 'https://bitmovin-a.akamaihd.net/content/sintel/poster.png'
+      progressive: '//bitdash-a.akamaihd.net/content/art-of-motion-frame-numbers/artofmotion_24fps_framenumbers.mp4'
     },
     frameRate: 24,
   },
