@@ -444,7 +444,7 @@ function step(stepSize) {
         toConvert.framesDroppedEachMinute);
   }
 
-  var player = new bitmovin.player.Player(document.getElementById('player-container'), conf);
+  player = new bitmovin.player.Player(document.getElementById('player-container'), conf);
 
   player.on('sourceloaded', function() {
 
